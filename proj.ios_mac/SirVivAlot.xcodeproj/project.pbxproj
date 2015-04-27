@@ -14,6 +14,12 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		3EACC98F19EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
 		3EACC99019EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
+		460D59331AE624E3002A8F7D /* CameraController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 460D592F1AE624E3002A8F7D /* CameraController.cpp */; };
+		460D59341AE624E3002A8F7D /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 460D59311AE624E3002A8F7D /* Player.cpp */; };
+		460D59521AE63592002A8F7D /* demon1.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 460D594E1AE63592002A8F7D /* demon1.c3b */; };
+		460D59531AE63592002A8F7D /* demon1.c3t in Resources */ = {isa = PBXBuildFile; fileRef = 460D594F1AE63592002A8F7D /* demon1.c3t */; };
+		460D59541AE63592002A8F7D /* demon_boss.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 460D59501AE63592002A8F7D /* demon_boss.jpg */; };
+		460D59551AE63592002A8F7D /* demon_boss.png in Resources */ = {isa = PBXBuildFile; fileRef = 460D59511AE63592002A8F7D /* demon_boss.png */; };
 		46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7619C43A67006E1F66 /* CloseNormal.png */; };
 		46880B7C19C43A67006E1F66 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7619C43A67006E1F66 /* CloseNormal.png */; };
 		46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7719C43A67006E1F66 /* CloseSelected.png */; };
@@ -107,6 +113,14 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3EACC98E19EE6D4300EB3C5E /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
+		460D592F1AE624E3002A8F7D /* CameraController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CameraController.cpp; sourceTree = "<group>"; };
+		460D59301AE624E3002A8F7D /* CameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraController.h; sourceTree = "<group>"; };
+		460D59311AE624E3002A8F7D /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		460D59321AE624E3002A8F7D /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		460D594E1AE63592002A8F7D /* demon1.c3b */ = {isa = PBXFileReference; lastKnownFileType = file; path = demon1.c3b; sourceTree = "<group>"; };
+		460D594F1AE63592002A8F7D /* demon1.c3t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = demon1.c3t; sourceTree = "<group>"; };
+		460D59501AE63592002A8F7D /* demon_boss.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demon_boss.jpg; sourceTree = "<group>"; };
+		460D59511AE63592002A8F7D /* demon_boss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demon_boss.png; sourceTree = "<group>"; };
 		46880B7619C43A67006E1F66 /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseNormal.png; sourceTree = "<group>"; };
 		46880B7719C43A67006E1F66 /* CloseSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseSelected.png; sourceTree = "<group>"; };
 		46880B7A19C43A67006E1F66 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
@@ -269,9 +283,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		460D594D1AE63592002A8F7D /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				460D594E1AE63592002A8F7D /* demon1.c3b */,
+				460D594F1AE63592002A8F7D /* demon1.c3t */,
+				460D59501AE63592002A8F7D /* demon_boss.jpg */,
+				460D59511AE63592002A8F7D /* demon_boss.png */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				460D594D1AE63592002A8F7D /* Player */,
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
 				46880B7619C43A67006E1F66 /* CloseNormal.png */,
@@ -289,6 +315,10 @@
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
 				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
+				460D592F1AE624E3002A8F7D /* CameraController.cpp */,
+				460D59301AE624E3002A8F7D /* CameraController.h */,
+				460D59311AE624E3002A8F7D /* Player.cpp */,
+				460D59321AE624E3002A8F7D /* Player.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -444,6 +474,7 @@
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
+				460D59531AE63592002A8F7D /* demon1.c3t in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				46880B8119C43A67006E1F66 /* HelloWorld.png in Resources */,
@@ -459,10 +490,13 @@
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
+				460D59551AE63592002A8F7D /* demon_boss.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
+				460D59521AE63592002A8F7D /* demon1.c3b in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
+				460D59541AE63592002A8F7D /* demon_boss.jpg in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,9 +522,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				460D59341AE624E3002A8F7D /* Player.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				460D59331AE624E3002A8F7D /* CameraController.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

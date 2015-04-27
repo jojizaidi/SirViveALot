@@ -2,6 +2,7 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+USING_NS_CC;
 
 class HelloWorld : public cocos2d::Layer
 {
@@ -11,7 +12,15 @@ public:
 
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
     virtual bool init();
+    void update(float dt);
     
+    void onTouchesEnded(const std::vector<Touch*>& touches, Event* event);//move to another class
+    Point locationToMove;
+    bool allowMovement;
+    
+    float modulus(float a, float b);
+    float calcAngle(Point p1, Point p2);
+
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
 };
