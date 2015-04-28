@@ -30,6 +30,12 @@
 		46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
 		46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
+		46EEA2311AEF5EEC00274DE5 /* mountain1.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 46EEA22E1AEF5EEC00274DE5 /* mountain1.c3b */; };
+		46EEA2321AEF5EEC00274DE5 /* mountain1.c3t in Resources */ = {isa = PBXBuildFile; fileRef = 46EEA22F1AEF5EEC00274DE5 /* mountain1.c3t */; };
+		46EEA2331AEF5EEC00274DE5 /* mountainsUV.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EEA2301AEF5EEC00274DE5 /* mountainsUV.png */; };
+		46EEA2361AEF6F0800274DE5 /* plane.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 46EEA2341AEF6F0800274DE5 /* plane.c3b */; };
+		46EEA2371AEF6F0800274DE5 /* plane.c3t in Resources */ = {isa = PBXBuildFile; fileRef = 46EEA2351AEF6F0800274DE5 /* plane.c3t */; };
+		46EEA2391AEF6F7500274DE5 /* grassTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EEA2381AEF6F7500274DE5 /* grassTexture.png */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -128,6 +134,12 @@
 		46880B8519C43A87006E1F66 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
 		46880B8719C43A87006E1F66 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
+		46EEA22E1AEF5EEC00274DE5 /* mountain1.c3b */ = {isa = PBXFileReference; lastKnownFileType = file; path = mountain1.c3b; sourceTree = "<group>"; };
+		46EEA22F1AEF5EEC00274DE5 /* mountain1.c3t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mountain1.c3t; sourceTree = "<group>"; };
+		46EEA2301AEF5EEC00274DE5 /* mountainsUV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountainsUV.png; sourceTree = "<group>"; };
+		46EEA2341AEF6F0800274DE5 /* plane.c3b */ = {isa = PBXFileReference; lastKnownFileType = file; path = plane.c3b; sourceTree = "<group>"; };
+		46EEA2351AEF6F0800274DE5 /* plane.c3t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane.c3t; sourceTree = "<group>"; };
+		46EEA2381AEF6F7500274DE5 /* grassTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grassTexture.png; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -297,6 +309,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				46EEA22D1AEF5EEC00274DE5 /* Terrain */,
 				460D594D1AE63592002A8F7D /* Player */,
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
@@ -322,6 +335,19 @@
 			);
 			name = Classes;
 			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		46EEA22D1AEF5EEC00274DE5 /* Terrain */ = {
+			isa = PBXGroup;
+			children = (
+				46EEA2381AEF6F7500274DE5 /* grassTexture.png */,
+				46EEA2341AEF6F0800274DE5 /* plane.c3b */,
+				46EEA2351AEF6F0800274DE5 /* plane.c3t */,
+				46EEA22E1AEF5EEC00274DE5 /* mountain1.c3b */,
+				46EEA22F1AEF5EEC00274DE5 /* mountain1.c3t */,
+				46EEA2301AEF5EEC00274DE5 /* mountainsUV.png */,
+			);
+			path = Terrain;
 			sourceTree = "<group>";
 		};
 		503AE0F517EB97AB00D1A890 /* Icons */ = {
@@ -474,10 +500,12 @@
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
+				46EEA2311AEF5EEC00274DE5 /* mountain1.c3b in Resources */,
 				460D59531AE63592002A8F7D /* demon1.c3t in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				46880B8119C43A67006E1F66 /* HelloWorld.png in Resources */,
+				46EEA2391AEF6F7500274DE5 /* grassTexture.png in Resources */,
 				46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
@@ -487,15 +515,19 @@
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
+				46EEA2371AEF6F0800274DE5 /* plane.c3t in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				460D59551AE63592002A8F7D /* demon_boss.png in Resources */,
+				46EEA2331AEF5EEC00274DE5 /* mountainsUV.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
+				46EEA2321AEF5EEC00274DE5 /* mountain1.c3t in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				460D59521AE63592002A8F7D /* demon1.c3b in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
+				46EEA2361AEF6F0800274DE5 /* plane.c3b in Resources */,
 				460D59541AE63592002A8F7D /* demon_boss.jpg in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 			);

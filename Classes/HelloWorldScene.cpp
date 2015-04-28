@@ -34,12 +34,14 @@ bool HelloWorld::init()
     locationToMove = Point::ZERO;
     
     
-    Size visibleSize = Director::getInstance()->getVisibleSize();
+    winSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
+    InitIsland();
+    
     //need to be moved in a seperate class
     this->addChild(Player::getInstance(),5);
-    Player::getInstance()->setPosition(visibleSize.width/2, visibleSize.height/2);
+    Player::getInstance()->setPosition(winSize.width/2, winSize.height/2);
     
     this->addChild(CameraController::getMainCamera());
     
@@ -52,11 +54,23 @@ bool HelloWorld::init()
     this->scheduleUpdate();
     
     
+    
     Sprite *test = Sprite::create("HelloWorld.png");
     this->addChild(test);
     test->setPositionZ(-80);
     test->setCameraMask((unsigned int)CameraFlag::USER1);
     return true;
+}
+
+
+void HelloWorld::InitIsland()
+{
+    theIsland = Sprite3D::create("plane.c3b");
+    theIsland->setTexture("mountainsUV.png");
+    theIsland->setPosition(Vec2(winSize.width/2 , winSize.height/2));
+    theIsland->setCameraMask((unsigned int)CameraFlag::USER1);
+    this->addChild(theIsland);
+    theIsland->setScale(5);
 }
 
 void HelloWorld::onTouchesEnded(const std::vector<Touch*>& touches, Event* event)
