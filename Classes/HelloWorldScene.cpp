@@ -65,7 +65,7 @@ bool HelloWorld::init()
 
 void HelloWorld::InitIsland()
 {
-    theIsland = Sprite3D::create("plane.c3b");
+    theIsland = Sprite3D::create("mountain1.c3b");
     theIsland->setTexture("mountainsUV.png");
     theIsland->setPosition(Vec2(winSize.width/2 , winSize.height/2));
     theIsland->setCameraMask((unsigned int)CameraFlag::USER1);
