@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17B059FD1AF1F5E600B0A603 /* dpadbase.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B059FB1AF1F5E600B0A603 /* dpadbase.png */; };
+		17B059FE1AF1F5E600B0A603 /* dpadmid.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B059FC1AF1F5E600B0A603 /* dpadmid.png */; };
 		1AC6FB21180E996B004C840B /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2d Mac.a */; };
 		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -112,6 +114,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17B059FB1AF1F5E600B0A603 /* dpadbase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dpadbase.png; sourceTree = "<group>"; };
+		17B059FC1AF1F5E600B0A603 /* dpadmid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dpadmid.png; sourceTree = "<group>"; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -314,6 +318,8 @@
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
 				46880B7619C43A67006E1F66 /* CloseNormal.png */,
+				17B059FB1AF1F5E600B0A603 /* dpadbase.png */,
+				17B059FC1AF1F5E600B0A603 /* dpadmid.png */,
 				46880B7719C43A67006E1F66 /* CloseSelected.png */,
 				46880B7A19C43A67006E1F66 /* HelloWorld.png */,
 			);
@@ -497,6 +503,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17B059FE1AF1F5E600B0A603 /* dpadmid.png in Resources */,
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
@@ -530,6 +537,7 @@
 				46EEA2361AEF6F0800274DE5 /* plane.c3b in Resources */,
 				460D59541AE63592002A8F7D /* demon_boss.jpg in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
+				17B059FD1AF1F5E600B0A603 /* dpadbase.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
