@@ -35,6 +35,9 @@
 		46CAC7891AF36E8D00554C22 /* player.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 46CAC7871AF36E8D00554C22 /* player.c3b */; };
 		46CAC78A1AF36E8D00554C22 /* player.c3t in Resources */ = {isa = PBXBuildFile; fileRef = 46CAC7881AF36E8D00554C22 /* player.c3t */; };
 		46CAC78C1AF36F5300554C22 /* bilal.png in Resources */ = {isa = PBXBuildFile; fileRef = 46CAC78B1AF36F5300554C22 /* bilal.png */; };
+		46CAC78F1AF3793800554C22 /* Tree_1.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 46CAC78D1AF3793800554C22 /* Tree_1.c3b */; };
+		46CAC7901AF3793800554C22 /* Tree_1.c3t in Resources */ = {isa = PBXBuildFile; fileRef = 46CAC78E1AF3793800554C22 /* Tree_1.c3t */; };
+		46CAC7921AF3794600554C22 /* Trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 46CAC7911AF3794600554C22 /* Trees.png */; };
 		46EEA2311AEF5EEC00274DE5 /* mountain1.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 46EEA22E1AEF5EEC00274DE5 /* mountain1.c3b */; };
 		46EEA2321AEF5EEC00274DE5 /* mountain1.c3t in Resources */ = {isa = PBXBuildFile; fileRef = 46EEA22F1AEF5EEC00274DE5 /* mountain1.c3t */; };
 		46EEA2331AEF5EEC00274DE5 /* mountainsUV.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EEA2301AEF5EEC00274DE5 /* mountainsUV.png */; };
@@ -144,6 +147,9 @@
 		46CAC7871AF36E8D00554C22 /* player.c3b */ = {isa = PBXFileReference; lastKnownFileType = file; path = player.c3b; sourceTree = "<group>"; };
 		46CAC7881AF36E8D00554C22 /* player.c3t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = player.c3t; sourceTree = "<group>"; };
 		46CAC78B1AF36F5300554C22 /* bilal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bilal.png; sourceTree = "<group>"; };
+		46CAC78D1AF3793800554C22 /* Tree_1.c3b */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tree_1.c3b; sourceTree = "<group>"; };
+		46CAC78E1AF3793800554C22 /* Tree_1.c3t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tree_1.c3t; sourceTree = "<group>"; };
+		46CAC7911AF3794600554C22 /* Trees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trees.png; sourceTree = "<group>"; };
 		46EEA22E1AEF5EEC00274DE5 /* mountain1.c3b */ = {isa = PBXFileReference; lastKnownFileType = file; path = mountain1.c3b; sourceTree = "<group>"; };
 		46EEA22F1AEF5EEC00274DE5 /* mountain1.c3t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mountain1.c3t; sourceTree = "<group>"; };
 		46EEA2301AEF5EEC00274DE5 /* mountainsUV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountainsUV.png; sourceTree = "<group>"; };
@@ -355,6 +361,9 @@
 		46EEA22D1AEF5EEC00274DE5 /* Terrain */ = {
 			isa = PBXGroup;
 			children = (
+				46CAC7911AF3794600554C22 /* Trees.png */,
+				46CAC78D1AF3793800554C22 /* Tree_1.c3b */,
+				46CAC78E1AF3793800554C22 /* Tree_1.c3t */,
 				46EEA2381AEF6F7500274DE5 /* grassTexture.png */,
 				46EEA2341AEF6F0800274DE5 /* plane.c3b */,
 				46EEA2351AEF6F0800274DE5 /* plane.c3t */,
@@ -460,7 +469,7 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = MDDB52YB8L;
+						DevelopmentTeam = 44FE56CJST;
 					};
 				};
 			};
@@ -516,11 +525,14 @@
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
+				46CAC7921AF3794600554C22 /* Trees.png in Resources */,
 				46EEA2311AEF5EEC00274DE5 /* mountain1.c3b in Resources */,
 				460D59531AE63592002A8F7D /* demon1.c3t in Resources */,
+				46CAC78F1AF3793800554C22 /* Tree_1.c3b in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				46880B8119C43A67006E1F66 /* HelloWorld.png in Resources */,
+				46CAC7901AF3793800554C22 /* Tree_1.c3t in Resources */,
 				46EEA2391AEF6F7500274DE5 /* grassTexture.png in Resources */,
 				46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,

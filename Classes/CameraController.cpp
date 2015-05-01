@@ -20,7 +20,7 @@ Camera* CameraController::getMainCamera()
         mainCamera = Camera::createPerspective(60, (GLfloat)s.width/s.height, 1, 2000);
         mainCamera->setPosition3D(Vec3(0, 0, 200));
         mainCamera->lookAt(Vec3(0, 200, 0), Vec3(0, 1, 0));
-        mainCamera->setCameraFlag(CameraFlag::USER8);//USER1 is the main camera
+        mainCamera->setCameraFlag(CameraFlag::USER8);//USER8 is the main camera
         mainCamera->setPositionX(mainCamera->getPositionX() + (Player::getInstance()->getPositionX()- mainCamera->getPositionX()));
         mainCamera->setPositionY(mainCamera->getPositionY() + (Player::getInstance()->getPositionY() - 200- mainCamera->getPositionY()));
     }
@@ -35,9 +35,6 @@ bool CameraController::init()
     {
         return false;
     }
-    
-    
-    
     
     
     return true;

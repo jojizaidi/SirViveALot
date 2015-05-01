@@ -42,6 +42,14 @@ bool HelloWorld::init()
     InitLight();
     
     
+    auto tree = Sprite3D::create("Tree_1.c3b");
+    tree->setTexture("Trees.png");
+    tree->setScale(10);
+    tree->setPosition(Vec2(winSize.width/2, winSize.height/2));
+    //player->setTexture("demon_boss.jpg");
+    tree->setCameraMask((unsigned int)CameraFlag::USER8);
+    this->addChild(tree);
+    
     
     //need to be moved in a seperate class
     this->addChild(Player::getInstance(),5);
