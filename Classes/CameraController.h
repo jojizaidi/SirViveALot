@@ -21,6 +21,7 @@ class CameraController :public Layer
 public:
     
     static Camera* getMainCamera();
+    
     virtual bool init();
 };
 

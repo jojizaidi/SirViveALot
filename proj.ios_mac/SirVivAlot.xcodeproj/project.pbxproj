@@ -32,6 +32,9 @@
 		46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
 		46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
+		46CAC7891AF36E8D00554C22 /* player.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 46CAC7871AF36E8D00554C22 /* player.c3b */; };
+		46CAC78A1AF36E8D00554C22 /* player.c3t in Resources */ = {isa = PBXBuildFile; fileRef = 46CAC7881AF36E8D00554C22 /* player.c3t */; };
+		46CAC78C1AF36F5300554C22 /* bilal.png in Resources */ = {isa = PBXBuildFile; fileRef = 46CAC78B1AF36F5300554C22 /* bilal.png */; };
 		46EEA2311AEF5EEC00274DE5 /* mountain1.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 46EEA22E1AEF5EEC00274DE5 /* mountain1.c3b */; };
 		46EEA2321AEF5EEC00274DE5 /* mountain1.c3t in Resources */ = {isa = PBXBuildFile; fileRef = 46EEA22F1AEF5EEC00274DE5 /* mountain1.c3t */; };
 		46EEA2331AEF5EEC00274DE5 /* mountainsUV.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EEA2301AEF5EEC00274DE5 /* mountainsUV.png */; };
@@ -138,6 +141,9 @@
 		46880B8519C43A87006E1F66 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
 		46880B8719C43A87006E1F66 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
+		46CAC7871AF36E8D00554C22 /* player.c3b */ = {isa = PBXFileReference; lastKnownFileType = file; path = player.c3b; sourceTree = "<group>"; };
+		46CAC7881AF36E8D00554C22 /* player.c3t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = player.c3t; sourceTree = "<group>"; };
+		46CAC78B1AF36F5300554C22 /* bilal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bilal.png; sourceTree = "<group>"; };
 		46EEA22E1AEF5EEC00274DE5 /* mountain1.c3b */ = {isa = PBXFileReference; lastKnownFileType = file; path = mountain1.c3b; sourceTree = "<group>"; };
 		46EEA22F1AEF5EEC00274DE5 /* mountain1.c3t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mountain1.c3t; sourceTree = "<group>"; };
 		46EEA2301AEF5EEC00274DE5 /* mountainsUV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountainsUV.png; sourceTree = "<group>"; };
@@ -302,6 +308,9 @@
 		460D594D1AE63592002A8F7D /* Player */ = {
 			isa = PBXGroup;
 			children = (
+				46CAC78B1AF36F5300554C22 /* bilal.png */,
+				46CAC7871AF36E8D00554C22 /* player.c3b */,
+				46CAC7881AF36E8D00554C22 /* player.c3t */,
 				460D594E1AE63592002A8F7D /* demon1.c3b */,
 				460D594F1AE63592002A8F7D /* demon1.c3t */,
 				460D59501AE63592002A8F7D /* demon_boss.jpg */,
@@ -525,6 +534,7 @@
 				46EEA2371AEF6F0800274DE5 /* plane.c3t in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
+				46CAC78A1AF36E8D00554C22 /* player.c3t in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				460D59551AE63592002A8F7D /* demon_boss.png in Resources */,
 				46EEA2331AEF5EEC00274DE5 /* mountainsUV.png in Resources */,
@@ -534,8 +544,10 @@
 				460D59521AE63592002A8F7D /* demon1.c3b in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
+				46CAC78C1AF36F5300554C22 /* bilal.png in Resources */,
 				46EEA2361AEF6F0800274DE5 /* plane.c3b in Resources */,
 				460D59541AE63592002A8F7D /* demon_boss.jpg in Resources */,
+				46CAC7891AF36E8D00554C22 /* player.c3b in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 				17B059FD1AF1F5E600B0A603 /* dpadbase.png in Resources */,
 			);

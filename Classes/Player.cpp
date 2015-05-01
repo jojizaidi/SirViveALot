@@ -18,8 +18,8 @@ Sprite3D *Player::getInstance()
         player = Sprite3D::create("demon1.c3b");
         player->setScale(4);
         player->setTexture("demon_boss.png");
-        player->setTexture("demon_boss.jpg");
-        player->setCameraMask((unsigned int)CameraFlag::USER1);
+        //player->setTexture("demon_boss.jpg");
+        player->setCameraMask((unsigned int)CameraFlag::USER8);
         player->setRotation3D(Vec3(90,0,0));
 
     }

@@ -10,6 +10,7 @@ private:
     
     Sprite3D *theIsland;
     void InitIsland();
+    void InitLight();
     Size winSize;
     Point touchLocation;
     float playerRotation;
@@ -17,6 +18,10 @@ private:
     Layer *hudLayer;
     Sprite *bgJoystick;
     Sprite *joystick;
+    
+    Camera *terrainCamera;
+    
+    DirectionLight *theLight;
 
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer

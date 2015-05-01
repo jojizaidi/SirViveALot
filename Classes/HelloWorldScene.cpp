@@ -36,8 +36,12 @@ bool HelloWorld::init()
     
     winSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-
+    
+    
     InitIsland();
+    InitLight();
+    
+    
     
     //need to be moved in a seperate class
     this->addChild(Player::getInstance(),5);
@@ -61,7 +65,7 @@ bool HelloWorld::init()
 
     hudLayer = Layer::create();
     this->addChild(hudLayer);
-    hudLayer->setCameraMask((unsigned int)CameraFlag::USER1);
+    hudLayer->setCameraMask((unsigned int)CameraFlag::USER2);
     bgJoystick = Sprite::create("dpadbase.png");
     hudLayer->addChild(bgJoystick,5);
     bgJoystick->setPosition(50,50);
@@ -74,24 +78,48 @@ bool HelloWorld::init()
     joystick->setScale(0.3);
 
     
-    Sprite *test = Sprite::create("HelloWorld.png");
-    this->addChild(test);
-    test->setPositionZ(-80);
-    test->setCameraMask((unsigned int)CameraFlag::USER1);
+
     return true;
 }
 
 
 void HelloWorld::InitIsland()
 {
-    theIsland = Sprite3D::create("mountain1.c3b");
-    theIsland->setTexture("mountainsUV.png");
-    theIsland->setPosition3D((Vec3(winSize.width/2 , winSize.height/2, - 100)));
-    theIsland->setCameraMask((unsigned int)CameraFlag::USER1);
-    this->addChild(theIsland);
-    theIsland->setScale(5);
+//    theIsland = Sprite3D::create("mountain1.c3b");
+//    theIsland->setTexture("mountainsUV.png");
+//    theIsland->setPosition3D((Vec3(winSize.width/2 , winSize.height/2, - 100)));
+//    theIsland->setCameraMask((unsigned int)CameraFlag::USER1);
+//    this->addChild(theIsland);
+//    theIsland->setScale(5);
+    
+    terrainCamera = Camera::createPerspective(60, (GLfloat)winSize.width/winSize.height, 1, 2000);
+    terrainCamera->setPosition3D(Vec3(0, 0, 200));
+    terrainCamera->lookAt(Vec3(0, 200, 0), Vec3(0, 1, 0));
+    terrainCamera->setCameraFlag(CameraFlag::USER2);//USER1 is the main camera
+    this->addChild(terrainCamera);
+    //terrainCamera->setPositionX(terrainCamera->getPositionX() + (Player::getInstance()->getPositionX()- mainCamera->getPositionX()));
+    //terrainCamera->setPositionY(terrainCamera->getPositionY() + (Player::getInstance()->getPositionY() - 200- mainCamera->getPositionY()));
+    
+    
+    Sprite *test = Sprite::create("HelloWorld.png");
+    test->setPosition(Vec2(winSize.width/2 , winSize.height/2));
+    test->setScale(10);
+    test->setCameraMask((unsigned int)CameraFlag::USER2);
+    this->addChild(test);
+    //test->setPositionZ(-80);
     
 }
+
+void HelloWorld::InitLight()
+{
+    theLight = DirectionLight::create(Vec3(0, 0, 0), Color3B(200, 200, 200));
+    theLight->retain();
+    theLight->setEnabled(true);
+    addChild(theLight);
+    theLight->setCameraMask((unsigned int)CameraFlag::USER2);
+}
+
+
 void HelloWorld::onTouchesBegan(const std::vector<Touch*>& touches, Event* event)
 {
     
@@ -148,6 +176,15 @@ void HelloWorld::onTouchesEnded(const std::vector<Touch*>& touches, Event* event
 void HelloWorld::update(float dt)
 {
     
+    if (theLight->getRotation3D().x == 250)
+    {
+        theLight->setRotation3D(Vec3( 91 , theLight->getRotation3D().y, theLight->getRotation3D().z ));
+    }
+    
+    theLight->setRotation3D(Vec3(theLight->getRotation3D().x + 1, theLight->getRotation3D().y, theLight->getRotation3D().z));
+    
+    
+    terrainCamera->setPosition(CameraController::getMainCamera()->getPosition());
     
  //   theIsland->setRotation3D(Vec3(theIsland->getRotation3D().x+1, theIsland->getRotation3D().y +1 , theIsland->getRotation3D().z +1));
     //need to be moved in a seperate class// for test only!
