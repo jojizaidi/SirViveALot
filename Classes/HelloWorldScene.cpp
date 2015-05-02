@@ -44,7 +44,7 @@ bool HelloWorld::init()
     
     auto tree = Sprite3D::create("Tree_1.c3b");
     tree->setTexture("Trees.png");
-    tree->setScale(10);
+    tree->setScale(5);
     tree->setPosition(Vec2(winSize.width/2, winSize.height/2));
     //player->setTexture("demon_boss.jpg");
     tree->setCameraMask((unsigned int)CameraFlag::USER8);
